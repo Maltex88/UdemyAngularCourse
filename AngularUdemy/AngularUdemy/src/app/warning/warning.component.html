@@ -1,0 +1,12 @@
+<div>
+<input
+  type="text"
+  [(ngModel)]="userName"
+  (ngModelChange)="checkForInput()">
+  <p>{{userName}}</p>
+  <button
+  type="button"
+  class="btn btn-primary"
+  name="button"
+  (click)="ifButtonClick()" [disabled]="status">Click me!</button>
+</div>
